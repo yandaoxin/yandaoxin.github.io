@@ -1,0 +1,90 @@
+<html>
+    <head>
+        <title>学生信息注册页面</title>
+        <style>
+            body{
+            background-image: url("山农封面.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            text-align: center; /* 全局居中 */
+        }
+
+        table {
+            background-color: rgba(255, 255, 255, 0.92);
+            padding: 25px;
+            border-radius: 10px;
+            margin: 0 auto;
+            text-align: left; /* 表单内部文字左对齐，更美观 */
+        }
+
+        h3 {
+            text-align: center;
+            background-color: rgba(255,255,255,0.8);
+            display: inline-block;
+            padding: 8px 25px;
+            border-radius: 8px;
+        }
+        </style>
+    </head>
+    <body>
+        <h3 align="center" >学生信息注册</h3>
+        <form name="stu" action="">
+        <table align="center" cellspacing="6">
+        <tr>
+            <td>姓名：</td><td><input type="text" name="student"></td>
+        </tr>
+        <tr>
+            <td>性别：</td>
+            <td><input type="radio" name="Sex" value="男">男
+                     <input type="radio" name="Sex" value="女">女
+            </td>
+        </tr>
+        <tr>
+            <td>出生日期：</td>
+            <td><input type="text" name="shri"></td>
+            <td>按格式yyyy-mm-dd</td>
+        </tr>
+        <tr>
+            <td>学校：</td>
+            <td><input type="text" name="xuexiao"></td>
+        </tr>
+        <tr>
+            <td>专业</td>
+            <td><select name="zhuanye">
+                        <option selected>计算机科学与技术</option>
+                        <option>网络工程</option>
+                        <option>智慧林业</option>
+                        <option>遥感技术</option>
+                     </select>
+            </td> 
+        </tr>
+        <tr>
+            <td>体育特长：</td>
+            <td><input type="checkbox" name="tiyu" value="篮球">篮球
+                    <input type="checkbox" name="tiyu" value="排球">排球
+                    <input type="checkbox" name="tiyu" value="足球">足球
+                    <input type="checkbox" name="tiyu" value="游泳">游泳
+            </td>
+        </tr>
+        <tr>
+            <td>上传照片：</td>
+            <td colspan="2"><input type="file"></td>
+        </tr>
+        <tr>
+            <td>密码：</td>
+            <td><input type="password" name="mima"></td>
+        </tr>
+        <tr>
+            <td>个人介绍：</td>
+            <td colspan="2"><textarea name="jieshao" style="width:300px; height:80px;"></textarea></td>
+        </tr>
+        <tr>
+            <td><input type="submit" value="提交"></td>
+            <td><input type="reset" value="重置"></td>
+        </tr>
+        </table>
+        </form>
+    </body>
+
+</html>
